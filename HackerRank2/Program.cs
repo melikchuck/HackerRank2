@@ -27,7 +27,7 @@ class Result
     public static void solve(double meal_cost, int tip_percent, int tax_percent)
     {
         double tip_cost = meal_cost * tip_percent / 100;
-        double tax_cost = meal_cost * tax_percent / 100;
+        double tax_cost = tip_percent * tax_percent / 100;
         double total_cost = meal_cost + tax_cost + tip_cost;
 
         Console.WriteLine(Math.Round(total_cost));
